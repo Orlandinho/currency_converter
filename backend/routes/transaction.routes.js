@@ -12,7 +12,7 @@ router.post('/', async(req, res) => {
     transaction.created_at = new Date().toISOString();
 
     if (!availableCurrencies.includes(transaction.currency_from.toUpperCase()) || !availableCurrencies.includes(transaction.currency_to.toUpperCase())) {
-        return res.status(400).json({ success: false,  error: 'Not Available! Only EUR, BRL, JPY and USD are available' });
+        return res.status(400).json({ success: false,  error: 'Only EUR, BRL, JPY and USD are available' });
     }
 
     if (!transaction.currency_from || !transaction.currency_to || !transaction.amount) {

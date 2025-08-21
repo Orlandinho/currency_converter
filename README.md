@@ -1,6 +1,6 @@
 ## How to run this app
 
-From the root folder run: "npm run dev" and It should start the backend on port 8000.
+Open your terminal and access the root folder of this project, then run: "npm run dev" and It should start the backend on port 8000.
 
 ## How to use this app
 You can use Postman to send post-requests to localhost:8000/api/v1/transactions with the body containing similar data as this to test the api:
@@ -18,7 +18,7 @@ There's an endpoint to get all transactions for a user id. You can send a get-re
 
 ## What tools were used
 
-The api was built primarily with Node.js and Express. It's using SQLite as its database. Also, it uses some packages like dotenv, better-sqlite3 and nodemon. The api comes from [exchangerates api](https://exchangeratesapi.io)
+The api was built primarily with Node.js and Express. It's using SQLite as its database. Also, it uses some packages like dotenv, better-sqlite3, jest, supertest and nodemon. The data used to calculate the currency rates comes from [exchangerates api](https://exchangeratesapi.io)
 
 ## Features and Purpose
 
